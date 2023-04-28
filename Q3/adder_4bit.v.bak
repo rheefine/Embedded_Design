@@ -1,0 +1,21 @@
+module adder_4bit(A, B, Ci, S);
+input [3:0] A, B;
+input Ci;
+output [3:0] S;
+output Co;
+wire [4:0] C;
+assign C[0] = Ci;
+genvar i;
+generate for (i = 0; i < 4; i = i+1) begin : gen_loop
+FullAdder FA(A[i], B[i], C[i], C[i+1], S[i]);
+end
+endgenerate
+assign Co = C[4];
+endmodule
+
+module FullAdder(X, Y, Cin, Cout, Sum);
+input X, Y, Cin;
+output Cout, Sum;
+assign Sum = X ^ Y ^ Cin;
+assign Cout = (X&Y) | (Y&Cin) | (X&Cin);
+endmodule

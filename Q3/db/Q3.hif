@@ -1,0 +1,141 @@
+Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+7
+2834
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+adder_4bit
+# storage
+db|Q3.(1).cnf
+db|Q3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+adder_4bit.v
+b995b66d5c4fbe6e340ccd0d1e46cac
+7
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+adder_4bit:adder1
+adder_4bit:adder2
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder
+# storage
+db|Q3.(2).cnf
+db|Q3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+adder_4bit.v
+b995b66d5c4fbe6e340ccd0d1e46cac
+7
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+adder_4bit:adder1|FullAdder:gen_loop[0].FA
+adder_4bit:adder1|FullAdder:gen_loop[1].FA
+adder_4bit:adder1|FullAdder:gen_loop[2].FA
+adder_4bit:adder1|FullAdder:gen_loop[3].FA
+adder_4bit:adder2|FullAdder:gen_loop[0].FA
+adder_4bit:adder2|FullAdder:gen_loop[1].FA
+adder_4bit:adder2|FullAdder:gen_loop[2].FA
+adder_4bit:adder2|FullAdder:gen_loop[3].FA
+}
+# macro_sequence
+
+# end
+# entity
+Q3
+# storage
+db|Q3.(0).cnf
+db|Q3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Q3.v
+1c4213e92fc6be5d4cf78afa78238c
+7
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,164 @@
+|Q3
+A[0] => A[0]~3.IN1
+A[1] => A[1]~2.IN1
+A[2] => A[2]~1.IN1
+A[3] => A[3]~0.IN1
+B[0] => B[0]~3.IN1
+B[1] => B[1]~2.IN1
+B[2] => B[2]~1.IN1
+B[3] => B[3]~0.IN1
+Ci => Ci~0.IN1
+S[0] <= adder_4bit:adder2.port3
+S[1] <= adder_4bit:adder2.port3
+S[2] <= adder_4bit:adder2.port3
+S[3] <= adder_4bit:adder2.port3
+S[4] <= adder_4bit:adder2.port4
+Co <= tmpA[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder1
+A[0] => A[0]~3.IN1
+A[1] => A[1]~2.IN1
+A[2] => A[2]~1.IN1
+A[3] => A[3]~0.IN1
+B[0] => B[0]~3.IN1
+B[1] => B[1]~2.IN1
+B[2] => B[2]~1.IN1
+B[3] => B[3]~0.IN1
+Ci => C[0].IN1
+S[0] <= FullAdder:gen_loop[0].FA.port4
+S[1] <= FullAdder:gen_loop[1].FA.port4
+S[2] <= FullAdder:gen_loop[2].FA.port4
+S[3] <= FullAdder:gen_loop[3].FA.port4
+Co <= FullAdder:gen_loop[3].FA.port3
+
+
+|Q3|adder_4bit:adder1|FullAdder:gen_loop[0].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder1|FullAdder:gen_loop[1].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder1|FullAdder:gen_loop[2].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder1|FullAdder:gen_loop[3].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder2
+A[0] => A[0]~3.IN1
+A[1] => A[1]~2.IN1
+A[2] => A[2]~1.IN1
+A[3] => A[3]~0.IN1
+B[0] => B[0]~3.IN1
+B[1] => B[1]~2.IN1
+B[2] => B[2]~1.IN1
+B[3] => B[3]~0.IN1
+Ci => C[0].IN1
+S[0] <= FullAdder:gen_loop[0].FA.port4
+S[1] <= FullAdder:gen_loop[1].FA.port4
+S[2] <= FullAdder:gen_loop[2].FA.port4
+S[3] <= FullAdder:gen_loop[3].FA.port4
+Co <= FullAdder:gen_loop[3].FA.port3
+
+
+|Q3|adder_4bit:adder2|FullAdder:gen_loop[0].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder2|FullAdder:gen_loop[1].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder2|FullAdder:gen_loop[2].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q3|adder_4bit:adder2|FullAdder:gen_loop[3].FA
+X => Cout~3.IN0
+X => Cout~0.IN0
+X => Sum~0.IN0
+Y => Cout~1.IN0
+Y => Cout~0.IN1
+Y => Sum~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => Sum~1.IN0
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

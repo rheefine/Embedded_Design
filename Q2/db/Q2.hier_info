@@ -1,0 +1,52 @@
+|Q2
+q0 <= q0~0.DB_MAX_OUTPUT_PORT_TYPE
+q1 <= q1~0.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= q2~0.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= q3~0.DB_MAX_OUTPUT_PORT_TYPE
+cl => cl~0.IN4
+
+
+|Q2|jk:U0
+J => always0~2.IN1
+J => always0~0.IN1
+J => always0~1.IN1
+K => always0~1.IN0
+K => always0~0.IN0
+K => always0~2.IN0
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q2|jk:U1
+J => always0~2.IN1
+J => always0~0.IN1
+J => always0~1.IN1
+K => always0~1.IN0
+K => always0~0.IN0
+K => always0~2.IN0
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q2|jk:U2
+J => always0~2.IN1
+J => always0~0.IN1
+J => always0~1.IN1
+K => always0~1.IN0
+K => always0~0.IN0
+K => always0~2.IN0
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Q2|jk:U3
+J => always0~2.IN1
+J => always0~0.IN1
+J => always0~1.IN1
+K => always0~1.IN0
+K => always0~0.IN0
+K => always0~2.IN0
+CL => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
